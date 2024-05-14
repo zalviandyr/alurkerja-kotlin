@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -8,11 +9,12 @@
 		<version>3.2.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.alurin</groupId>
+
+	<groupId>com.alurkerja</groupId>
 	<artifactId>alurin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>alurin</name>
-	<description>alurin</description>
+	<description>Alurkerja Kotlin</description>
 
 	<properties>
 		<java.version>17</java.version>
@@ -21,6 +23,14 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>3.2.5</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
 			<dependency>
 				<groupId>org.camunda.bpm</groupId>
 				<artifactId>camunda-bom</artifactId>

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 class PengajuanCutiService(
     pengajuancutiRepository: PengajuanCutiRepository,
-    private val camundaProcessService: CamundaProcessService,
+    camundaProcessService: CamundaProcessService,
     activityLogService: ActivityLogService
 ): BpmnService<PengajuanCuti, PengajuanCutiDto, PengajuanCutiVariable, PengajuanCutiRepository>(
     pengajuancutiRepository,
