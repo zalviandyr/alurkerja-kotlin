@@ -1,4 +1,4 @@
-package com.alurkerja.alurin.alurkerjakotlin
+package com.alurkerja.alurin
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
