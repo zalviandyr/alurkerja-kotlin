@@ -1,11 +1,11 @@
-package com.alurkerja.alurin
+package com.alurin
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class AlurkerjaKotlinApplication
+class AlurinApplication
 
 fun main(args: Array<String>) {
-	runApplication<AlurkerjaKotlinApplication>(*args)
+	runApplication<AlurinApplication>(*args)
 }
