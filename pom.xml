@@ -52,6 +52,30 @@
 		<!-- Camunda End -->
 
 		<dependency>
+			<groupId>com.alurkerja.bpmn</groupId>
+			<artifactId>alurkerja-bpmn</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alurkerja.crud</groupId>
+			<artifactId>alurkerja-crud</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alurkerja.core</groupId>
+			<artifactId>alurkerja-core</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<!-- Database Start -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- Database End -->
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
@@ -78,11 +102,7 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -94,6 +114,14 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>maven-snapshots</id>
+			<name>Alurkerja Snapshot</name>
+			<url>https://maven.cloud.javan.co.id/repository/maven-snapshots</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
